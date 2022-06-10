@@ -93,45 +93,45 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form>
+          <form [formGroup]="formvalue">
             <div class="mb-3">
               <label for="nom" class="form-label">Nom</label>
-              <input type="text" class="form-control" id="nom" >
+              <input type="text"  formControlName="nom" class="form-control" id="nom" >
             </div>
             <div class="mb-3">
               <label for="prenom" class="form-label">Prenom</label>
-              <input type="text" class="form-control" id="prenom" >
+              <input type="text"  formControlName="prenom"  class="form-control" id="prenom" >
             </div>
             <div class="mb-3">
               <label for="adresse" class="form-label">Adresse</label>
-              <input type="text" class="form-control" id="adresse" >
+              <input type="text"   formControlName="adresse" class="form-control" id="adresse" >
             </div>
             <div class="mb-3">
               <label for="telephone" class="form-label">Phone</label>
-              <input type="text" class="form-control" id="telephone" >
+              <input type="text"  formControlName="phone"  class="form-control" id="telephone" >
             </div>
             <div class="mb-3">
               <label for="salaire" class="form-label">Salaire</label>
-              <input type="number" class="form-control" id="salaire" >
+              <input type="number"   formControlName="salaire" class="form-control" id="salaire" >
             </div>
 
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="text" class="form-control" id="email" >
+              <input type="text" formControlName="email" class="form-control" id="email" >
             </div>
 
 
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1">
             </div>
 
 
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-outline-success">Save</button>
+          <button type="button" id="annuler" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" (click)="postEmployeeDetail()"   class="btn btn-outline-success">Save</button>
         </div>
       </div>
     </div>
