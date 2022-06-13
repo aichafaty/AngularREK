@@ -1,16 +1,6 @@
 {
   "posts": [
     {
-      "id": 3,
-      "nom": "ba",
-      "prenom": "babe",
-      "adresse": "ossss",
-      "phone": "2222222222",
-      "salaire": 67678676,
-      "email": "sory@isi.sn",
-      "password": ""
-    },
-    {
       "id": 4,
       "nom": "Thiam",
       "prenom": "Assane",
@@ -22,23 +12,13 @@
     },
     {
       "id": 5,
-      "nom": "ba",
-      "prenom": "sohibouMMMMM",
+      "nom": "sene",
+      "prenom": "sohibou",
       "adresse": "yoff",
       "phone": "22 44 55 64444",
       "salaire": 789789787,
       "email": "fallou@isi.sn",
       "password": "passer123"
-    },
-    {
-      "id": 6,
-      "nom": "so",
-      "prenom": "aichaddd",
-      "adresse": "yoff",
-      "phone": "4445654565464",
-      "salaire": 0,
-      "email": "fallou@isi.sn",
-      "password": "aicha@"
     }
   ],
   "comments": [],

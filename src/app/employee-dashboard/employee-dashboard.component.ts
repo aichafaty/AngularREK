@@ -66,5 +66,35 @@ export class EmployeeDashboardComponent implements OnInit {
         this.ngOnInit();
       })
   }
+  editEmploye(employe:any){
+   // alert("id" +employe.id);
+    this.employeeDashboardModelObj.id=employe.id;
+    this.formvalue.controls['nom'].setValue(employe.nom);
+    this.formvalue.controls['prenom'].setValue(employe.prenom);
+    this.formvalue.controls['adresse'].setValue(employe.adresse);
+    this.formvalue.controls['phone'].setValue(employe.phone);
+    this.formvalue.controls['email'].setValue(employe.email);
+    this.formvalue.controls['salaire'].setValue(employe.salaire);
+    this.formvalue.controls['password'].setValue(employe.password);
+
+  }
+  updateEmploye(){
+    this.employeeDashboardModelObj.nom=this.formvalue.value.nom;
+    this.employeeDashboardModelObj.prenom=this.formvalue.value.prenom;
+    this.employeeDashboardModelObj.adresse=this.formvalue.value.adresse;
+    this.employeeDashboardModelObj.phone=this.formvalue.value.phone;
+    this.employeeDashboardModelObj.email=this.formvalue.value.email;
+    this.employeeDashboardModelObj.salaire=this.formvalue.value.salaire;
+    this.employeeDashboardModelObj.password=this.formvalue.value.password;
+
+    this.api.updateEmploye(this.employeeDashboardModelObj,this.employeeDashboardModelObj.id)
+      .subscribe(res=>{
+        console.log(res)
+        alert("update successuf");
+        let ref=document.getElementById("annuler")
+        ref?.click();
+        this.formvalue.reset();
+      })
+  }
 
 }
