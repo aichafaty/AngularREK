@@ -1,21 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
-      "id": 2,
-      "nom": "",
-      "prenom": "",
-      "adresse": "",
-      "phone": "",
-      "salaire": "",
-      "email": "",
-      "password": ""
-    },
-    {
       "id": 3,
       "nom": "ba",
       "prenom": "babe",
@@ -54,25 +39,9 @@
       "salaire": 0,
       "email": "fallou@isi.sn",
       "password": "aicha@"
-    },
-    {
-      "id": 7,
-      "nom": "Geo",
-      "prenom": "emma gorgette",
-      "adresse": "OLK",
-      "phone": "2222222222",
-      "salaire": 1000000,
-      "email": "a@defar.com",
-      "password": "passer"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }

@@ -29,6 +29,7 @@ export class EmployeeDashboardComponent implements OnInit {
       }
     )
     this.getAllEmplyee();
+
   }
    postEmployeeDetail(){
     this.employeeDashboardModelObj.nom=this.formvalue.value.nom;
@@ -58,5 +59,12 @@ export class EmployeeDashboardComponent implements OnInit {
       })
 
    }
+  deleteEmploye(id:any){
+    this.api.deleteEmploye(id)
+      .subscribe(res=>{
+        alert("Voulez vou vraiment supprimer")
+        this.ngOnInit();
+      })
+  }
 
 }
