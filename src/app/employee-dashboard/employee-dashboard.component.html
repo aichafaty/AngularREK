@@ -62,15 +62,15 @@
       </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>ba</td>
-          <td>aicha</td>
-          <td>ouakam</td>
-          <td>772556533</td>
-          <td>1 000 000</td>
-          <td>a@gmail.com</td>
-          <td>passer</td>
+        <tr *ngFor="let employe of employeData">
+          <td>{{employe.id}}</td>
+          <td>{{employe.nom}}</td>
+          <td>{{employe.prenom}}</td>
+          <td>{{employe.adresse}}</td>
+          <td>{{employe.phone}}</td>
+          <td>{{employe.salaire}}</td>
+          <td>{{employe.email}}</td>
+          <td>{{employe.password}}</td>
           <td>
 
             <button  class="btn btn-outline-warning"><i class="bi bi-vector-pen"></i></button>

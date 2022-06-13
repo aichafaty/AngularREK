@@ -10,6 +10,7 @@ import {EmployeeDashboardModel} from "./employee-dashboard.model";
 })
 export class EmployeeDashboardComponent implements OnInit {
   formvalue!:FormGroup;
+  employeData!: any;
   employeeDashboardModelObj:EmployeeDashboardModel=new EmployeeDashboardModel();
   constructor(private formbuilber:FormBuilder,
               private api :ApiService) { }
@@ -27,6 +28,7 @@ export class EmployeeDashboardComponent implements OnInit {
 
       }
     )
+    this.getAllEmplyee();
   }
    postEmployeeDetail(){
     this.employeeDashboardModelObj.nom=this.formvalue.value.nom;
@@ -48,6 +50,13 @@ export class EmployeeDashboardComponent implements OnInit {
         error => {
         alert("rien ne marche frere");
         })
+   }
+   getAllEmplyee(){
+    this.api.getEmploye()
+      .subscribe(res=>{
+        this.employeData=res;
+      })
+
    }
 
 }

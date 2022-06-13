@@ -54,6 +54,16 @@
       "salaire": 0,
       "email": "fallou@isi.sn",
       "password": "aicha@"
+    },
+    {
+      "id": 7,
+      "nom": "Geo",
+      "prenom": "emma gorgette",
+      "adresse": "OLK",
+      "phone": "2222222222",
+      "salaire": 1000000,
+      "email": "a@defar.com",
+      "password": "passer"
     }
   ],
   "comments": [
